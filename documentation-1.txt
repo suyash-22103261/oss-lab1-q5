@@ -1,0 +1,28 @@
+Simple-Calculator-in-C
+By Anish-Paul-01
+
+1. This program uses c language to implement a basic calaculator application.It supports addition,subtraction,multiplication, and division operations providing a simple learning session for beginners. It handles various scenarios such as user opting out of using the calculator, selecting an invalid operator, or attempting to divide by zero. The overall structure uses conditional statements and a switch-case statement to control the flow of execution based on user input.
+
+2. Main Function: The program starts executing from the `main()` function.
+
+3. Variables:
+   - `num_1`, `num_2`: Floating-point variables to store two numbers.
+   - `cal`: Character variable to store user's choice whether to use the calculator (`Y`/`N`).
+   - `opr`: Character variable to store the arithmetic operator chosen by the user (`+`, `-`, `*`, `/`).
+
+4. User Input:
+   - Asks the user if they want to use the calculator (`Y/N`). Input is stored in `cal`.
+   - Depending on the value of `cal`, different branches of execution are followed.
+
+5. Conditional Statements:
+   - If the user enters `N` or `n`, the program prints "Thank You!" and exits using `exit(0);`.
+   - If the user enters `Y` or `y`, the program proceeds to ask for an operator (`+`, `-`, `*`, `/`) and two numbers (`num_1` and `num_2`).
+
+6. Switch Case:
+   - Based on the operator (`opr`) chosen by the user, performs the corresponding arithmetic operation.
+   - Handles division separately to check if `num_2` is zero to avoid division by zero error.
+
+7. Error Handling:
+   - If the user enters any character other than `Y`, `y`, `N`, or `n` for `cal`, the program prints "Invalid input!".
+
+
